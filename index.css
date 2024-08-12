@@ -1,0 +1,37 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	height: 100vh;
+	background: var(--background) black;
+	background-size: cover;
+	background-position: left center;
+}
+
+#ui {
+	position: absolute;
+	left: 1em;
+	bottom: 1em;
+	display: flex;
+	gap: .5em;
+}
+
+#ui > * {
+	padding: 5px 10px;
+	clip-path: polygon(0 0,calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+#volumeUI {
+	background-color: #25252A;
+}
+
+button {
+	border: none;
+	font-size: 1em;
+	color: white;
+	background-color: #464966;
+}
+button:hover {
+	background-color: #575B7F;
+}
+button:active {
+	background-color: #3D6845;
+}
